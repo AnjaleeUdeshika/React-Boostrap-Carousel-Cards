@@ -27,44 +27,102 @@ h2{
   
 }
 
-.Main-Layout{
+/*--------------Grid System------------------*/
+
+.Main-Container{
+  width: 80%;
+  margin-top: 20px;
+}
+
+.Row-1{
+  height: 250px;
+}
+.Row-2{
+  height: 125px;
+}
+.Row-3{
+  height: 625px;
+}
+.Row-1-Col-1 {
   height: 100%;
-}
-
-.Row1{
-  height:20%;
-}
-
-.Row1-Col1{
   background-color: brown;
 }
 
-.Row1-Col2{
+.Row-1-Col-2 {
+  height: 100%;
   background-color: rgb(215, 218, 51);
-}
-
-.Row2{
-
-  height: 60%;
-}
-
-.Row2-Col1-Row1{
-  background-color: chartreuse;
-}
-
-.Row2-Col1-Row2{
-  background-color: rgb(55, 200, 219);
-}
-
-.Row2-Col2-Row1{
-  background-color: crimson;
+  
 } 
 
+.Row-2-Col-1{
+  height: 100%;
+  background-color: chartreuse;
+  
+}
+.Row-2-Col-2{
+  height: 200%;
+  background-color: rgb(55, 200, 219);
+  
 
-.Row2-Col2-Row2-Col1{
+}
+.Row-3-Col-1{
+  height: 100%;
+  background-color: crimson;
+ 
+}
+.Row-3-Col-2{
+  height: 80%;
+  align-self: end;
   background-color: blueviolet;
+  
+}
+.Row-3-Col-3{
+  height: 80%;
+  align-self: end;
+  background-color: rgb(56, 172, 72);
 }
 
-.Row2-Col2-Row2-Col2{
-  background-color: rgb(56, 172, 72);
+
+@media (max-width: 767px) {
+  .Main-Container {
+    width: 80%;
+    margin-top: 20px;
+  }  
+  .Row-1{
+    height: 250px;
+    margin-bottom: 200px;
+  }
+  .Row-2{
+    height: 125px;
+    margin-bottom: 100px;
+  }
+  .Row-3{
+    height: 625px;
+  }
+  .Row-1-Col-1 {
+    height: 100%;
+    background-size: cover;
+  }  
+  .row-1-Col-2 {
+    height: 100%;
+    background-size: cover;
+  }  
+  .Row-2-Col-1{
+    height: 100%;
+  }
+  .Row-2-Col-2{
+    height: 100%;
+  }
+  .Row-3-Col-1{
+    height: 120%;
+    align-self: end;
+  }
+  .Row-3-Col-2{
+    height: 80%;
+    align-self: end;
+  }
+  .Row-3-Col-3{
+    height: 80%;
+    align-self: end;
+  }
 }

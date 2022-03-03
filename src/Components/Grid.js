@@ -5,29 +5,28 @@ import Col from 'react-bootstrap/Col';
 function Grid() {
     return (
       <div >
+
         {/*--------------------Grid Layout-------------------------*/}
-        <Container className="Main-Layout">
-           
-            <Row className="Row1" xs={1} md={2}>
-                <Col className='Row1-Col1'><h1>A</h1></Col>
-                <Col className='Row1-Col2'><h1>B</h1></Col>   
-            </Row>
-            
-            <Row className="Row2" xs={1} md={2}>
-                <Col className='Row2-Col1'xs={12} md={4}>
-                    <Row className='Row2-Col1-Row1' xs={1} md={2}><h1>C</h1></Row>
-                    <Row className='Row2-Col1-Row2' xs={1} md={2}><h1>E</h1></Row>
-                </Col>
-                <Col className='Row2-Col2' xs={12} md={8}>
-                    <Row className='Row2-Col2-Row1' xs={8} md={2}><h1>D</h1></Row>
-                    <Row className="Row2-Col2-Row2" xs={12} md={2}>
-                        <Col className='Row2-Col2-Row2-Col1'><h1>F</h1> </Col>
-                        <Col className='Row2-Col2-Row2-Col2'><h1>G</h1></Col>   
-                    </Row> 
-                </Col> 
-            </Row> 
+
+        <h2>Grid Layout</h2>
+        <Container className="Main-Container">
                
-        </Container>
+                <Row  className="Row-1" md= {4} >        
+                    <Col className="Row-1-Col-1" xs={12} md={6}><h2>A </h2>  </Col>
+                    <Col className="Row-1-Col-2" xs={12} md={6}> <h2>B </h2></Col>           
+                </Row>
+                <Row className="Row-2" md= {4}>        
+                    <Col className="Row-2-Col-1" xs={12} md={4}> <h2>C </h2> </Col>
+                    <Col className="Row-2-Col-2" xs={12} md={8}> <h2>D </h2></Col>           
+                </Row>
+                <Row className="Row-3" md= {4}>        
+                    <Col className="Row-3-Col-1" xs={12} md={4}> <h2>E </h2> </Col>
+                    <Col className="Row-3-Col-2" xs={6} md={4}> <h2>F </h2> </Col>
+                    <Col className="Row-3-Col-3" xs={6} md={4}> <h2>G </h2></Col>             
+                </Row>
+           
+               
+            </Container>
 
 
       </div>

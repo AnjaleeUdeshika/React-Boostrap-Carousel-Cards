@@ -1,7 +1,7 @@
 import React from "react";
  
 import { Button } from "react-bootstrap";
-import { Container, Navbar, Nav, NavDropdown, Form,FormControl} from 'react-bootstrap';
+import { Container, Navbar, Nav, NavDropdown, Form,FormControl } from 'react-bootstrap';
 
 function NavBar() {
     return (
